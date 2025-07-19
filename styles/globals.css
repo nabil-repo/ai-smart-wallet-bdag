@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional custom styles */
+body {
+  @apply bg-background text-white font-sans;
+}
+
+@keyframes blink {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+}
+
+.typing-dots::after {
+  content: "...";
+  animation: blink 1s steps(3, end) infinite;
+}
