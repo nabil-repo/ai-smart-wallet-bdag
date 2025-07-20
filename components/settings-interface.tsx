@@ -104,6 +104,8 @@ export function SettingsDashboard({ walletService, isConnected, onConnect }: Wal
                     <code className="flex-1 text-sm">{guardian}</code>
                     <Badge variant="outline">Guardian {index + 1}</Badge>
 
+                    <Button variant="outline" className="text-red-600 bg-transparent size-13" onClick={async () => { await walletService.removeGuardian(guardian); loadWalletData()}}>
+                      Remove</Button>
                   </div>
 
                   <div className="flex items-center">

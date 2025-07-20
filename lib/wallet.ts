@@ -30,7 +30,7 @@ const WalletFactoryABI = [
   "event WalletCreated(address indexed owner, address indexed wallet)",
 ]
 
-const BDAG_PARAMS  = {
+const BDAG_PARAMS = {
   chainId: "0x413",
   chainName: "BlockDAG Primordial Testnet",
   nativeCurrency: {
@@ -69,7 +69,7 @@ export class WalletService {
   }
 
   private async ensureCorrectNetwork() {
-    const targetChainId = BDAG_PARAMS .chainId
+    const targetChainId = BDAG_PARAMS.chainId
 
     const currentChainId = await window.ethereum.request({ method: "eth_chainId" })
 
@@ -83,7 +83,7 @@ export class WalletService {
         if (switchError.code === 4902) {
           await window.ethereum.request({
             method: "wallet_addEthereumChain",
-            params: [BDAG_PARAMS ],
+            params: [BDAG_PARAMS],
           })
         } else {
           throw switchError
@@ -165,6 +165,13 @@ export class WalletService {
     if (!this.smartWallet) throw new Error("Smart wallet not initialized")
 
     const tx = await this.smartWallet.addGuardian(guardian)
+    return tx.hash
+  }
+
+  async removeGuardian(guardian: string): Promise<string> {
+    if (!this.smartWallet) throw new Error("Smart wallet not initialized")
+
+    const tx = await this.smartWallet.removeGuardian(guardian)
     return tx.hash
   }
 
