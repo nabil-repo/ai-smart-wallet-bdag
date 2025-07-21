@@ -53,7 +53,6 @@ Create a `.env.local` file:
 ```env
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
 # Blockchain Configuration
-PRIVATE_KEY=your_wallet_private_key
 RPC_URL=https://test-rpc.primordial.bdagscan.com
 
 # Open Router Configuration
@@ -70,7 +69,6 @@ NEXT_PUBLIC_BLOCKDAG_CHAIN_ID=1043
 ### 4. Run the development server
 
 ```bash
-npm compile
 npm run dev
 ```
 
