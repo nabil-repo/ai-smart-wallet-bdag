@@ -12,12 +12,14 @@ module.exports = {
       },
     },
   },
-  // hardhat.config.js
   networks: {
-    fuji: {
-      url: "https://api.avax-test.network/ext/bc/C/rpc",
-      accounts: [process.env.PRIVATE_KEY],
-      chainId: 43113,
+    hardhat: {
+      chainId: 1337,
     },
-  },
+    blockdag: {
+      url: process.env.BLOCKDAG_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 1043,
+    },
+  }
 };
