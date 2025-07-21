@@ -3,12 +3,12 @@
 
 **DAGSense** is an AI-powered smart contract wallet dApp that allows users to manage their crypto assets using natural language (chat or voice). It supports token transfers, balance checks, guardian recovery, and more — all through a sleek interface integrated with RainbowKit, Wagmi, and Ethers.js.
 
-🟢 **Visit Now:** [https://avasense.vercel.app](https://avasense.vercel.app)
+🟢 **Visit Now:** [https://dagsense.vercel.app](https://dagsense.vercel.app)
 
 ## ✨ Features
 
 - ✅ Wallet connection via RainbowKit
-- 🌉 Supports Avalanche Fuji Testnet
+- 🌉 Supports BlockDAG Primordial Testnet
 - 🤖 AI-powered chat interface for wallet actions
 - 🔐 Smart wallet with:
   - Token transfer
@@ -24,7 +24,7 @@
 
 | Contract       | Address                                 |
 | -------------- | --------------------------------------- |
-| Wallet Factory | `0xF030E94be8B2fCDF2317928CACaF8979F3DEc524` |
+| Wallet Factory | `0x8831A634F70abE3441d235D70C9728c836f0504e` |
 | Smart Wallet   | Created per user via factory            |
 
 ---
@@ -36,8 +36,8 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/avasense.git
-cd avasense
+git clone https://github.com/your-username/dagsense.git
+cd dagsense
 ````
 
 ### 2. Install dependencies
@@ -71,7 +71,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 * **Frontend:** Next.js (App Router), TailwindCSS
 * **Wallet Connection:** RainbowKit + Wagmi + WalletConnect v2
 * **Blockchain SDK:** Ethers.js
-* **Chain:** Avalanche Fuji Testnet
+* **Chain:** BlockDAG Primordial Testnet
 * **Smart Contracts:**
 
   * WalletFactory.sol
@@ -116,9 +116,9 @@ Chat and voice commands are parsed to determine intent and mapped to wallet acti
 
 --- -->
 
-## 📜 License
+<!-- ## 📜 License
 
-MIT License © 2025 \[Nabil Ansari]
+MIT License © 2025 \[Nabil Ansari] -->
 
 ---
 
