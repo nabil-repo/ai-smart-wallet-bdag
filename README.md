@@ -52,6 +52,17 @@ Create a `.env.local` file:
 
 ```env
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
+# Blockchain Configuration
+PRIVATE_KEY=your_wallet_private_key
+RPC_URL=https://test-rpc.primordial.bdagscan.com
+
+# Open Router Configuration
+OPENAI_API_KEY=your_Openrouter_key
+
+# Next.js Configuration
+NEXT_PUBLIC_WALLET_FACTORY_ADDRESS=0x8831A634F70abE3441d235D70C9728c836f0504e
+NEXT_PUBLIC_BLOCKDAG_CHAIN_ID=1043
+
 ```
 
 > Replace `your_walletconnect_project_id` with the actual project ID from [WalletConnect Cloud](https://cloud.walletconnect.com/).
@@ -59,6 +70,7 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
 ### 4. Run the development server
 
 ```bash
+npm compile
 npm run dev
 ```
 
